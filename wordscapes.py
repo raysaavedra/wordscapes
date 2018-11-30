@@ -10,7 +10,7 @@ def main(letters, min_length=3):
     enchant_dict = enchant.Dict("en_US")
     final_list = []
 
-    for i in range(min_length, len(letters)):
+    for i in range(min_length, len(letters)+1):
         for word in word_generator(letters, i):
             word = ''.join(word)
             
